@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Standings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Football Standings</h1>
+  
+  <label for="competition-select">Select a Competition:</label>
+  <select id="competition-select">
+    <option value="CL">UCL</option>
+    <option value="PD">La Liga</option>
+    <option value="PL">Premier League</option>
+    <option value="BL1">Bundesliga</option>
+    <option value="SA">Serie A</option>
+    <option value="FL1">Ligue 1</option>
+    <option value="DED">Eredivisie</option>
+    <!-- <option value="WC">World Cup</option> -->
+    <!-- <option value="EC">Euro</option> -->
+  </select>
+
+  <div class="CORS" style="display: none;">
+    <strong>⚠️</strong> If the standings failed to load, <em>click the below button</em> and <em>request the temporary access</em> and <b>refresh the page.</b>
+    <br>
+    <button id="CORS">Click</button>
+  </div>
+  
+  <h2>Standings:</h2>
+  <table id="standings">
+    <thead>
+      <tr>
+        <th id="top-left">Position</th>
+        <th>Team</th>
+        <th>Games Played</th>
+        <th>Won</th>
+        <th>Draw</th>
+        <th>Lost</th>
+        <th id="top-right">Points</th>
+      </tr>
+    </thead>
+    <tbody id="standings-body">
+      <tr>
+        <td colspan="7">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

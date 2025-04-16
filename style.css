@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e2e1e1;
+  padding: 20px;
+}
+
+select:hover{
+  background-color: rgba(0, 242, 255, 0.076);
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: none;
+  border-radius: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #e2e1e1;
+  text-align: center;
+}
+
+th {
+  background-color: #0e868a;
+  color: white;
+}
+
+tr td:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+tr td:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+tr:hover{
+  background-color: honeydew;
+  border-radius: 15px;
+}
+
+#top-left {
+  border-top-left-radius: 15px;
+}
+
+#top-right {
+  border-top-right-radius: 15px;
+}
+
+#CORS {
+  width: 15%;
+  margin-top: 10px;
+  background-color: #67e8d0;
+  border-radius: 15px;
+}
+
+#CORS:hover {
+  background-color: #095f62;
+  color: white;
+}
+
+.CORS {
+  background-color: rgba(255, 247, 0, 0.238);
+  padding: 10px;
+  border: 3px double rgb(255, 140, 102);
+  border-radius: 20px;
+  text-align: center;
+  width: 98%;
+}
