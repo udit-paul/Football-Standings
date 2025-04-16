@@ -2,6 +2,11 @@ const apiKey = "5683133c365242a3b4fd257ac2ada61a"; // Replace with your actual A
 const select = document.getElementById("competition-select");
 const standingsBody = document.getElementById("standings-body");
 
+document.getElementById("mode-toggle").addEventListener("change", function () {
+  document.body.classList.toggle("dark-mode");
+});
+
+
 // Using a free CORS proxy to bypass CORS issues
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const link = document.getElementById("CORS");

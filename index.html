@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Football Standings</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Heading -->
   <h1>Football Standings</h1>
-  
+
+  <!-- Dark Mode Toggle aligned right -->
+  <div class="toggle-container">
+    <label for="mode-toggle" class="dark-label"><b>Dark Mode</b></label>
+    <label class="switch">
+      <input type="checkbox" id="mode-toggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
   <label for="competition-select">Select a Competition:</label>
   <select id="competition-select">
     <option value="CL">UCL</option>
@@ -18,16 +29,14 @@
     <option value="SA">Serie A</option>
     <option value="FL1">Ligue 1</option>
     <option value="DED">Eredivisie</option>
-    <!-- <option value="WC">World Cup</option> -->
-    <!-- <option value="EC">Euro</option> -->
   </select>
 
   <div class="CORS" style="display: none;">
-    <strong>⚠️</strong> If the standings failed to load, <em>click the below button</em> and <em>request the temporary access</em> and <b>refresh the page.</b>
-    <br>
+    <strong>⚠️</strong> If the standings failed to load, <em><b>click</b> the below button</em> and <em><b>request</b> the temporary access</em> and <em><b>refresh</b> the page.</em>
+    <br />
     <button id="CORS">Click</button>
   </div>
-  
+
   <h2>Standings:</h2>
   <table id="standings">
     <thead>
