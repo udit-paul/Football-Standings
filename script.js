@@ -1,4 +1,4 @@
-const apiKey = "5683133c365242a3b4fd257ac2ada61a"; // Replace with your actual API key
+const apiKey = "5683133c365242a3b4fd257ac2ada61a";
 const select = document.getElementById("competition-select");
 const standingsBody = document.getElementById("standings-body");
 
@@ -6,13 +6,22 @@ document.getElementById("mode-toggle").addEventListener("change", function () {
   document.body.classList.toggle("dark-mode");
 });
 
-
 // Using a free CORS proxy to bypass CORS issues
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-const link = document.getElementById("CORS");
-const div = document.getElementsByClassName("CORS");
 const apiUrl = "https://api.football-data.org/v4/competitions/";
 
+const corsDiv = document.getElementsByClassName("CORS")[0]; // only one div
+const link1 = document.getElementById("CORS1");
+const link2 = document.getElementById("CORS2");
+
+// Add listeners once (outside fetch)
+link1.addEventListener("click", () => {
+  window.open("https://cors-anywhere.herokuapp.com/", "_blank");
+});
+
+link2.addEventListener("click", () => {
+  window.open("https://robwu.nl/cors-anywhere.html", "_blank");
+});
 
 // Fetch standings data from the API
 async function fetchStandings(competitionCode) {
@@ -42,10 +51,7 @@ async function fetchStandings(competitionCode) {
   } catch (error) {
     standingsBody.innerHTML = "<tr><td colspan='7'>Failed to load standings</td></tr>";
     console.error("Error:", error);
-    div[0].style.display = "inline-block";
-    link.addEventListener("click", () => {
-      window.open("https://cors-anywhere.herokuapp.com/", '_blank');
-    });
+    corsDiv.style.display = "inline-block";
   }
 }
 

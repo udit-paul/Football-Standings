@@ -66,14 +66,28 @@ tr:hover{
   border-top-right-radius: 15px;
 }
 
-#CORS {
+#CORS1 {
   width: 15%;
   margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #67e8d0;
+  border-radius: 15px;
+}
+#CORS2 {
+  width: 15%;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   background-color: #67e8d0;
   border-radius: 15px;
 }
 
-#CORS:hover {
+#CORS1:hover {
+  background-color: #095f62;
+  color: white;
+}
+#CORS2:hover {
   background-color: #095f62;
   color: white;
 }
@@ -122,12 +136,21 @@ body.dark-mode .CORS {
   border-color: #777;
 }
 
-body.dark-mode #CORS {
-  background-color: #693c00;
+body.dark-mode #CORS1 {
+  background-color: #a05d06;
   color: white;
 }
 
-body.dark-mode #CORS:hover {
+body.dark-mode #CORS1:hover {
+  background-color: #f58c02;
+  color: rgb(55, 55, 55);
+}
+body.dark-mode #CORS2 {
+  background-color: #a05d06;
+  color: white;
+}
+
+body.dark-mode #CORS2:hover {
   background-color: #f58c02;
   color: rgb(55, 55, 55);
 }
